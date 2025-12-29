@@ -1,0 +1,141 @@
+<!DOCTYPE html>  
+<html lang="ja">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>HazeZine</title>  
+  <script src="https://cdn.tailwindcss.com"></script>  
+  <link rel="stylesheet" href="../css.css" />     
+</head>  
+  
+<body class="bg-black text-white font-serif m-0 p-0">  
+
+<!-- HEADER -->  
+<header class="fixed top-0 left-0 w-full flex justify-center items-center px-4 h-[69px]   
+  bg-black/80 backdrop-blur-sm border-b border-white-800 z-50">  
+
+  <!-- ロゴ画像 -->  
+  <a href="../index.html">  
+    <img src="../images/toppagename1.png" alt="HazeUndayz"   
+         class="h-20 md:h-16 object-contain block">  
+  </a>  
+
+  <!-- ハンバーガーメニュー -->  
+  <button id="menu-button" class="text-white focus:outline-none absolute right-4">  
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">  
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  
+        d="M4 6h16M4 12h16M4 18h16" />  
+    </svg>  
+  </button>  
+</header>  
+
+<!-- メニュー（ポップアップ） -->  
+<div id="menu-popup" class="hidden fixed top-[69px] left-0 w-full bg-black/95 text-white flex flex-col items-center space-y-6 py-8 z-40">  
+  <a href="../what.html" class="hover:opacity-70">About</a>  
+  <a href="../product.html" class="hover:opacity-70">Products</a>  
+  <a href="../index.html" class="hover:opacity-70">Home</a>  
+  <a href="../contact.html" class="hover:opacity-70">Contact</a>  
+</div>  
+
+<!-- コンテンツがヘッダー下に隠れないように -->  
+<div class="pt-[69px]"></div>  
+
+
+
+
+    <!-- 本文 -->
+    <article class="prose prose-neutral max-w-2xl mx-auto text-[0.95rem] leading-8 text-center">
+
+<div class="article-content last:[&>p]:text-right">
+      <p>
+</br></br></br>
+Hello world,I'm HazeUndayz.
+</br></br></br>
+-Awaken.</br></br>
+</br>
+Please, </br>
+let your love flow into nature.</br></br>
+We can always feel that love.</br></br>
+I want you to keep going, never give up.</br>
+Look at the little plants under your feet—</br>
+the ones you might think are just ordinary weeds.</br></br></br>
+Feel their presence.</br></br></br>
+
+覚醒めよ。</br></br>
+</br>
+君にお願いがある。</br>
+どうかその愛を、自然に向けてほしい。</br></br>
+私たちはそれを必ず感じ取る事ができる。</br></br>
+諦めないで。</br>
+君のその足元にある</br>
+私たちの小さな使者に気づいて。</br>
+それは雑草ではなく私たち。</br>
+</br>
+感じるんだ。</br></br></br></br>
+      </p>
+
+<p></p>
+
+      </div>
+
+    <!-- メイン画像 >
+    <div class="w-full max-w-2xl mx-auto mb-12">
+      <img
+        src="../images/e1.jpg"
+        alt="essay"
+        class="w-full h-auto rounded-md object-cover"
+      />
+    </div-->
+
+
+    </article>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->  
+<footer class="bg-black text-gray-300 py-10 px-6 text-center">  
+  <div class="max-w-5xl mx-auto flex flex-col justify-center items-center gap-8 border-t border-gray-700 pt-8">  
+
+    <a href="../index.html" class="flex flex-col items-center">  
+      <img src="../images/logowhite.png" alt="HazeUndayzlogo" class="h-20 mb-4">  
+      <p class="text-xs tracking-widest uppercase"></p>  
+    </a>  
+
+    <nav class="flex flex-wrap justify-center gap-6 text-sm">  
+      <a href="../what.html" class="hover:text-white transition-colors">About</a>  
+      <a href="../product.html" class="hover:text-white transition-colors">Products</a>  
+      <a href="../news.html" class="hover:text-white transition-colors">News</a>  
+      <a href="../contact.html" class="hover:text-white transition-colors">Contact</a>  
+    </nav>  
+
+    <div class="flex justify-center gap-6">  
+      <a href="https://www.instagram.com/HazeUndayz" target="_blank" class="hover:text-white transition-colors">Instagram</a>  
+      <a href="https://x.com/HazeUndayz" target="_blank" class="hover:text-white transition-colors">X</a>  
+    </div>  
+
+    <p class="text-xs text-gray-500 mt-8">&copy; 2025 HazeUndayz. All rights reserved.</p>  
+  </div>  
+</footer>  
+
+
+  
+<script>
+/* メニュー */
+const menuBtn = document.getElementById('menu-button');
+const menuPopup = document.getElementById('menu-popup');
+menuBtn.addEventListener('click', () => {
+  menuPopup.style.display = menuPopup.style.display === 'flex' ? 'none' : 'flex';
+});
+menuPopup.addEventListener('click', () => {
+  menuPopup.style.display = 'none';
+});
+</script>
+
+
+</body>  
+</html>
