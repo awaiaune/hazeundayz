@@ -30,12 +30,16 @@
 </header>  
 
 <!-- メニュー（ポップアップ） -->  
-<div id="menu-popup" class="hidden fixed top-[69px] left-0 w-full bg-black/95 text-white flex flex-col items-center space-y-6 py-8 z-40">  
-  <a href="what.html" class="hover:opacity-70">About</a>  
-  <a href="product.html" class="hover:opacity-70">Products</a>  
-  <a href="news.html" class="hover:opacity-70">News</a>  
-  <a href="index.html" class="hover:opacity-70">Home</a>  
-</div>  
+<div id="menu-popup" class="menu-popup hidden fixed inset-0 top-[69px] z-40">
+  <div class="menu-bg"></div>
+
+  <div class="menu-content">
+    <a href="what.html">About</a>
+    <a href="product.html">Products</a>
+    <a href="news.html">News</a>
+    <a href="index.html">Home</a>
+  </div>
+</div>
 
 <!-- コンテンツがヘッダー下に隠れないように -->  
 <div class="pt-[69px]"></div>  
