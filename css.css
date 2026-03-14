@@ -56,17 +56,18 @@ html, body {
   margin: 0 auto !important;
 }
 
-
 .menu-popup {
   position: fixed;
 }
 
+/*
 .menu-bg {
   position: absolute;
   inset: 0;
   background: url("images/mbg.jpg") center / cover no-repeat;
   opacity: 0.2; /* ← 画像だけ透過 */
 }
+*/
 
 .menu-content {
   position: relative;
@@ -78,3 +79,22 @@ html, body {
   gap: 1.5rem;
   padding-top: 2rem;
 }
+
+.fade {
+opacity: 0;
+transform: translateY(30px);
+transition: all 1s ease;
+}
+
+.fade.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:0 20px;
+}
+
