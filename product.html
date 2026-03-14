@@ -8,323 +8,226 @@
    <link rel="stylesheet" href="css.css" />   
 </head>
 
+
 <body class="bg-black text-white font-serif m-0 p-0">
 
-
-
-
-
 <!-- HEADER -->
-<header class="fixed top-0 left-0 w-full flex justify-center items-center px-4 h-[69px] 
-  bg-black/80 backdrop-blur-sm border-b border-white z-50">
+<header class="fixed top-0 left-0 w-full flex justify-center items-center px-4 h-[69px]  
+bg-black/80 backdrop-blur-sm border-b border-white-800 z-50">
 
-  <!-- ロゴ画像 -->
-  <a href="index.html">
-    <img src="images/toppagename1.png" alt="HazeUndayz" 
-         class="h-20 md:h-16 object-contain block">
-  </a>
+<a href="index.html">
+<img src="images/toppagename1.png" alt="HazeUndayz"
+class="h-20 md:h-16 object-contain block">
+</a>
 
-  <!-- ハンバーガーメニュー -->
-  <button id="menu-button" class="text-white focus:outline-none absolute right-4">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
+<button id="menu-button" class="text-white focus:outline-none absolute right-4">
+<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+d="M4 6h16M4 12h16M4 18h16"/>
+</svg>
+</button>
+
 </header>
 
-<!-- メニュー（ポップアップ） -->
-<div id="menu-popup" class="menu-popup hidden fixed inset-0 top-[69px] z-40">
-  <div class="menu-bg"></div>
+<div id="menu-popup"
+class="hidden fixed top-[69px] left-0 w-full bg-black/95 text-white flex flex-col items-center space-y-6 py-8 z-40">
 
-  <div class="menu-content">
-    <a href="what.html">About</a>
-    <a href="index.html">Home</a>
-    <a href="news.html">News</a>
-    <a href="contact.html">Contact</a>
-  </div>
+<a href="about.html">About</a>
+<a href="index.html">Home</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+
 </div>
-<!-- コンテンツがヘッダー下に隠れないように -->
+
 <div class="pt-[69px]"></div>
 
 
-<!--    Product    -->
-    
- 　　　<section class="bg-black text-white font-sans py-16 px-6 divide-y-[1px] divide-white">
+<section id="clear" class="blend-section py-20">
 
-<div class="bg-black text-white font-sans tracking-tight ">
-  <div class="max-w-4xl mx-auto text-right">
-    <h2 class="text-6xl md:text-8xl font-extrabold opacity-90 mb-8">PRODUCT</h2>
-    <p class="text-sm md:text-base leading-relaxed opacity-90">
-      100% natural, Japanese-grown herbs.
-Nothing added. Nicotine-free.<br>
-Just plants, shaped into a quiet ritual.<br>
-Made to slow you down.
-</br>
-    </p>
-    <br/>
-    <p class="text-xs md:text-base leading-relaxed opacity-90 mb-16">
-      国産100%天然ハーブ。
-余分なものは入れない。ニコチンフリー。<br>
-植物だけでつくる、静かな儀式。<br>
-自分のペースに戻るために。<br>
-    </p>
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+
+<div>
+<img src="images/clear.jpg" class="w-full aspect-[4/2] object-cover">
+<img src="images/clear-up.jpg" class="w-full aspect-[4/2] object-cover mt-4">
 </div>
 
-  <div id="chunk" class="max-w-4xl mx-auto text-left">
-    <h2 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-8 leading-none scale-y-125 opacity-80">
-      Chunk Case
-    </h2>
-    <p class="text-sm md:text-base leading-snug opacity-90 max-w-2xl">
-      Chunk invites you to pause — to slow down, breathe, and reconnect.
-      Each blend is crafted to carve out something special from the everyday —
-      a small ritual that turns the ordinary into something sacred.
-    </p>  <div id="clear">
-    <p class="text-xs md:text-base leading-snug opacity-90 max-w-2xl mt-4 mb-12">
-      漂うその先へ。<br>
-      日常から特別を切り取る。それは小さな儀式。
-    </p>
-  </div>
+<div>
 
-  <!-- CARDS -->
-  <div class="max-w-4xl mx-auto">
+<h2 class="text-5xl md:text-6xl font-bold mb-4">Chunk case</h2>
 
-    <!-- CARD 1 -->
-      <div class="relative group ">
-        <a href="https://hazeundayz.stores.jp/items/6919631f4fb49094c91dd0a2">
-<img src="images/clear.jpg" alt="Chunk/CLEAR" class="w-full object-cover aspect-[4/2]">
-        <div class="absolute bottom-3 right-6">
-          <h3 class="text-lg font-bold  decoration-2 scale-y-125 ">click stores. </h3>
-        </div>
-      </div>
-<img src="images/clear-up.jpg" alt="Chunk/CLEAR" class="w-full object-cover aspect-[4/2] mt-4">
+<h3 class="text-xl mb-4">CLEAR</h3>
 
-        <div class="px-3 py-2">
-          <h4 class="text-lg font-bold text-white mt-4  mb-1 scale-y-125">
-
-Chunk Case/CLEAR　5g
-
-</h4>
-<p>
-
-Blend:Lemon Balm Flower, Goldenrod Flower, mugwort.
-
+<p class="text-sm opacity-90 mb-4">
+Blend: Lemon Balm Flower / Goldenrod Flower / Mugwort
 </p>
 
-  <p class="text-xs max-w-md text-gray-200 mb-2">
-            レモンバームの花、ゴールデンロッドの花、ヨモギ。
-          </p>
-          <p class="italic text-gray-400 mt-8">
-            have long been used for purification,<br>
-long before words were written.<br>
+<p class="text-xs text-gray-300 mb-6">
+レモンバームの花・ゴールデンロッドの花・ヨモギ
+</p>
+
+<p class="italic text-gray-400 mb-8">
 light the smoke.<br>
-let it clear.<br><br>
-          </p>
-  <p class="text-xs max-w-md text-gray-200 ">
-            祓い浄化する<br>
-煙を灯し手放そう。<br><br>
-          </p>
-<p class="text-s max-w-md text-gray-200 mb-2">
-          </br></br>
-          </p>
-        </div></a><div id="ember">
-<a href="https://hazeundayz.stores.jp/items/6919631f4fb49094c91dd0a2">
- <p class="text-xs max-w-md text-white text-right mb-16">
-            stores
-          </p></a>
-
-
-
-      </div>
-  </div>
- <div class="max-w-4xl mx-auto">
-
-    <!-- CARD 2 -->
-      <div class="relative group ">
-        <a href=" https://hazeundayz.stores.jp/items/694a281b58165714afb7aa18">
-<img src="images/ember.jpg" alt="Chunk/EMBER" class="w-full object-cover aspect-[4/2]">
-        <div class="absolute bottom-3 right-6">
-          <h3 class="text-lg font-bold  decoration-2 scale-y-125 ">click stores. </h3>
-        </div>
-      </div>
-<img src="images/ember-up.jpg" alt="Chunk/EMBER" class="w-full object-cover aspect-[4/2] mt-4">
-
-        <div class="px-3 py-2">
-          <h4 class="text-lg font-bold text-white mt-4  mb-1 scale-y-125">
-
-Chunk Case/EMBER　7g
-
-</h4>
-<p>
-
-Blend:Mugwort, Lemon Balm, Goldenrod Flower, Tinpi.
-
+let it clear.
 </p>
 
-  <p class="text-xs max-w-md text-gray-200 mb-2">
-            ヨモギ、レモンバーム、ゴールデンロッドの花、陳皮。
-          </p>
-          <p class="italic text-gray-400 mt-8">
-have long been used not only to purify,<br>
-but to awaken what lies beneath.<br>
-long before words were written.<br>
+<a href="https://hazeundayz.stores.jp/items/6919631f4fb49094c91dd0a2"
+class="border border-white px-5 py-2 text-sm hover:bg-white hover:text-black transition">
+View in Stores
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="blend-section py-20 border-t border-white/20" id="ember">
+
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+
+<div>
+<img src="images/ember.jpg" class="w-full aspect-[4/2] object-cover">
+<img src="images/ember-up.jpg" class="w-full aspect-[4/2] object-cover mt-4">
+</div>
+
+<div>
+
+<h2 class="text-5xl md:text-6xl font-bold mb-4">Chunk case</h2>
+
+<h3 class="text-xl mb-4">EMBER</h3>
+
+<p class="text-sm opacity-90 mb-4">
+Blend: Mugwort / Lemon Balm / Goldenrod Flower / Tinpi
+</p>
+
+<p class="text-xs text-gray-300 mb-6">
+ヨモギ・レモンバーム・ゴールデンロッド・陳皮
+</p>
+
+<p class="italic text-gray-400 mb-8">
 light the ember.<br>
-let it glow.<br><br>
-          </p>
-  <p class="text-xs max-w-md text-gray-200 ">
-          
-奥にあるものに触れ<br>
-そして、静かに燃えていく。<br><br>
-          </p>
-<p class="text-s max-w-md text-gray-200 mb-2">
-       </br></br></p>
-          </p>
-        </div></a>
-<a href="https://hazeundayz.stores.jp/items/694a281b58165714afb7aa18">
- <p class="text-xs max-w-md text-gray-200 text-right">
-            stores
-          </p></a>
-      </div>
-  </div>
-</section><div id="package"">
-
-
-<!--    package    -->
-<section class="bg-black text-white font-sans py-16 px-6 divide-y-[1px] divide-white">
-  <div id="joint" class="max-w-4xl mx-auto text-left">
-    <h2 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-8 leading-none scale-y-125 opacity-80 mt-8">
-      Chunk Package
-    </h2>
-    <p class="text-sm md:text-base leading-snug opacity-90 max-w-2xl">    
-Chunk Package is made to be used, finished, and refilled.
-No excess. No ceremony.<br>
-Just enough haze, at your own pace.
-    </p>
-    <p class="text-xs md:text-base leading-snug opacity-90 max-w-2xl mt-4 mb-12">
-使って、終えて、また戻る。
-飾らない。構えない。<br>
-自分のリズムに、ちょうどいいHAZE。
-    </p>
-  </div>
-  <!-- CARDS -->
-  <div class="max-w-4xl mx-auto divide-y-[1px] divide-white space-y-2">
-
-    <!-- CARD 1 -->
-    
-      <div class="relative group ">
-<a href="https://hazeundayz.stores.jp/items/696369ff8fb59e8c4b2c6c45">
-        <img src="images/package.jpg" alt="Chunk package" class="w-full object-cover aspect-[4/2]">
-   <div class="absolute bottom-3 right-6">
-          <h3 class="text-lg font-bold  decoration-2 scale-y-125 ">click stores. </h3>
-
-        </div>
-      </div>
-        <div class="px-3 py-2">
-          <h4 class="text-lg font-bold text-white mt-4  mb-1 scale-y-125">
-Chunk Package
-</h4>
-<p>
-Use it. Finish it. Refill it.<br>
+let it glow.
 </p>
-<p class="text-xs max-w-md text-gray-200 mb-2">
 
-          </p>
-          <p class="italic text-gray-400 mt-8">
-          
-          </p>
-  <p class="text-xs max-w-md text-gray-200 ">
-            
---- Chunk Package ---<br>
-Chunk（2.7g）<br>
-ショートサイズペーパー<br>
-クラッチペーパー 3枚<br>
-Occasionally includes an original sticker.<br><br>
-※稀にオリジナルステッカー入り<br>
-          </p>
-        </div></a>
-<a href="https://hazeundayz.stores.jp/items/6919c1a3e4ecddfa9b40538a">
- <p class="text-xs max-w-md text-gray-200 text-right">
-            stores
-          </p></a>
-      </div>
-  </div>
-</section><div id="joint"">
+<a href="https://hazeundayz.stores.jp/items/694a281b58165714afb7aa18"
+class="border border-white px-5 py-2 text-sm hover:bg-white hover:text-black transition">
+View in Stores
+</a>
 
-<!--    Joints    -->
-<section class="bg-black text-white font-sans py-16 px-6 divide-y-[1px] divide-white">
-  <div id="joint" class="max-w-4xl mx-auto text-left">
-    <h2 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-8 leading-none scale-y-125 opacity-80 mt-8">
-      Chunk Ritual Set
-    </h2>
-    <p class="text-sm md:text-base leading-snug opacity-90 max-w-2xl">    
-Chunk Ritual Set<br>
-A small ritual for slowing down.<br>
-Chunk’s aroma and simple hand-crafting come together to bring you back to your own pace.
-Carry it, make it, shape your moment.<br>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="py-20 border-t border-white/20">
+
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+
+<div>
+<img src="images/package.jpg" class="w-full aspect-[4/2] object-cover">
+</div>
+
+<div>
+
+<h2 class="text-5xl font-bold mb-6">Chunk Package</h2>
+
+<p class="text-sm mb-8">
+Use it. Finish it. Refill it.<br>
+Just enough haze, at your own pace.
+</p>
+
+<a href="https://hazeundayz.stores.jp/items/696369ff8fb59e8c4b2c6c45"
+class="border border-white px-5 py-2 text-sm hover:bg-white hover:text-black transition">
+View in Stores
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="py-20 border-t border-white/20">
+
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+
+<div>
+<img src="images/productjoint1.jpg" class="w-full aspect-[4/2] object-cover">
+</div>
+
+<div>
+
+<h2 class="text-5xl font-bold mb-6">Chunk Ritual Set</h2>
+
+<p class="text-sm mb-8">
 Craft your haze.<br>
-    </p>
-    <p class="text-xs md:text-base leading-snug opacity-90 max-w-2xl mt-4 mb-12">
-
-  日常をゆるめる、小さな儀式のセット。<br>
-Chunkの香りと手で触れる非日常の感覚が、あなたをHazeへ誘う。
-    </p>
-  </div>
-  <!-- CARDS -->
-  <div class="max-w-4xl mx-auto divide-y-[1px] divide-white space-y-2">
-
-    <!-- CARD 1 -->
-    
-      <div class="relative group ">
-<a href="https://hazeundayz.stores.jp/items/6919c1a3e4ecddfa9b40538a">
-        <img src="images/productjoint1.jpg" alt="Haze Ritual Set" class="w-full object-cover aspect-[4/2]">
-   <div class="absolute bottom-3 right-6">
-          <h3 class="text-lg font-bold  decoration-2 scale-y-125 ">click stores. </h3>
-
-        </div>
-      </div>
-        <div class="px-3 py-2">
-          <h4 class="text-lg font-bold text-white mt-4  mb-1 scale-y-125">
-Chunk Package
-</h4>
-<p>
-Craft your haze.
 Slow down. Shape the moment.
 </p>
-<p class="text-xs max-w-md text-gray-200 mb-2">
-手を動かして、日常をゆっくりほどく。<br>
-Chunkの香りとともに、<br>
-ただ自分のペースに戻るためのクラフトキット。<br>
-持ち運びやジョイントを繰り返し愉しむために便利なガラスケース付き。<br>
-          </p>
-          <p class="italic text-gray-400 mt-8">
-          
-          </p>
-  <p class="text-xs max-w-md text-gray-200 ">
-            
----Haze Ritual Set---<br>
-Glass Ritual Jar<br>
-Chunk Package<br>
-キングサイズペーパー2枚<br>
-ショートサイズペーパー1枚<br>
-クラッチペーパー3枚<br>
-          </p>
-        </div></a>
-<a href="https://hazeundayz.stores.jp/items/6919c1a3e4ecddfa9b40538a">
- <p class="text-xs max-w-md text-gray-200 text-right">
-            stores
-          </p></a>
-      </div>
-  </div>
+
+<a href="https://hazeundayz.stores.jp/items/6919c1a3e4ecddfa9b40538a"
+class="border border-white px-5 py-2 text-sm hover:bg-white hover:text-black transition">
+View in Stores
+</a>
+
+</div>
+
+</div>
+
 </section>
 
 
 
 
+<!-- FOOTER -->
 
+<footer class="bg-black text-gray-300 py-10 px-6 text-center">
 
+<div class="max-w-5xl mx-auto flex flex-col justify-center items-center gap-8 border-t border-gray-700 pt-8">
 
+<a href="index.html" class="flex flex-col items-center">
+<img src="images/logowhite.png" class="h-20 mb-4">
+</a>
+
+<nav class="flex flex-wrap justify-center gap-6 text-sm">
+<a href="about.html">About</a>
+<a href="product.html">Shop</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="flex gap-6">
+<a href="https://www.instagram.com/hazeundayz">Instagram</a>
+<a href="https://x.com/HazeUndayz">X</a>
+</div>
+
+<p class="text-xs text-gray-500 mt-8">
+© 2025 HazeUndayz
+</p>
+
+</div>
+
+</footer>
 
 <script>
+
+const menuBtn = document.getElementById('menu-button');
+const menuPopup = document.getElementById('menu-popup');
+
+menuBtn.addEventListener('click', () => {
+menuPopup.style.display =
+menuPopup.style.display === 'flex' ? 'none' : 'flex';
+});
+
+menuPopup.addEventListener('click', () => {
+menuPopup.style.display = 'none';
+});
+
+
 function toggleDescription(card) {
   const hidden = card.nextElementSibling;
   const isOpen = hidden.classList.contains('open');
@@ -341,56 +244,7 @@ function toggleDescription(card) {
     hidden.classList.add('open');
   }
 }
-</script>
 
-
-
-<!-- FOOTER -->
-<footer class="bg-black text-gray-300 py-10 px-6 text-center">
-  <div class="max-w-5xl mx-auto flex flex-col justify-center items-center gap-8 border-t border-gray-700 pt-8">
-
-      <!-- ロゴ -->
-    <a href="index.html" class="flex flex-col items-center">
-      <img src="images/logowhite.png" alt="HazeUndayzlogo" class="h-20 mb-4">
-      <p class="text-xs tracking-widest uppercase"></p>
-    </a>
-
-    <!-- ナビゲーション -->
-    <nav class="flex flex-wrap justify-center gap-6 text-sm">
-      <a href="what.html" class="hover:text-white transition-colors">About</a>
-      <a href="product.html" class="hover:text-white transition-colors">Products</a>
-      <a href="news.html" class="hover:text-white transition-colors">News</a>
-      <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
-    </nav>
-
-    <!-- SNS -->
-    <div class="flex justify-center gap-6">
-      <a href="https://www.instagram.com/HazeUndayz" target="_blank" class="hover:text-white transition-colors">Instagram</a>
-      <a href="https://x.com/HazeUndayz" target="_blank" class="hover:text-white transition-colors">X</a>
-      <!--a href="https://www.tiktok.com/@hazeundayz" target="_blank" class="hover:text-white transition-colors">tiktok</a-->
-    </div>
-
-    <!-- コピーライト -->
-    <p class="text-xs text-gray-500 mt-8">&copy; 2025 HazeUndayz. All rights reserved.</p>
-
-  </div>
-</footer>
-
-
-
-
-
-  
-<script>
-/* メニュー */
-const menuBtn = document.getElementById('menu-button');
-const menuPopup = document.getElementById('menu-popup');
-menuBtn.addEventListener('click', () => {
-  menuPopup.style.display = menuPopup.style.display === 'flex' ? 'none' : 'flex';
-});
-menuPopup.addEventListener('click', () => {
-  menuPopup.style.display = 'none';
-});
 </script>
 
 </body>
