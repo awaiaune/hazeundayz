@@ -60,15 +60,6 @@ html, body {
   position: fixed;
 }
 
-/*
-.menu-bg {
-  position: absolute;
-  inset: 0;
-  background: url("images/mbg.jpg") center / cover no-repeat;
-  opacity: 0.2; /* ← 画像だけ透過 */
-}
-*/
-
 .menu-content {
   position: relative;
   z-index: 10;
@@ -98,3 +89,25 @@ margin:auto;
 padding:0 20px;
 }
 
+/* ===== ヘッダー縮小 ===== */
+header {
+transition: all 0.3s ease;
+}
+
+.header-small {
+height: 56px !important;
+backdrop-filter: blur(6px);
+}
+
+.header-small img {
+height: 48px !important;
+}
+
+
+.header-small {
+background: rgba(0,0,0,0.9);
+}
+
+header img {
+transition: all 0.3s ease;
+}
