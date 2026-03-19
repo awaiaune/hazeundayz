@@ -219,15 +219,17 @@ function renderPagination() {
 // 初期表示
 showPage(1);
 
-  window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function(){
 
-const header = document.querySelector('header');
+  const header = document.querySelector('header');
 
-if(window.scrollY > 50){
-header.classList.add('header-small');
-} else {
-header.classList.remove('header-small');
-}
+  if(window.scrollY > 50){
+    header.classList.add('h-[56px]');
+    header.classList.remove('h-[69px]');
+  } else {
+    header.classList.add('h-[69px]');
+    header.classList.remove('h-[56px]');
+  }
 
 });
   
