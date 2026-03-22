@@ -17,7 +17,7 @@
   <!-- ロゴ画像 -->  
   <a href="index.html">  
     <img src="images/toppagename1.png" alt="HazeUndayz"   
-         class="h-20 md:h-16 object-contain block">  
+         class="h-16 object-contain block">  
   </a>  
 
   <!-- ハンバーガーメニュー -->  
@@ -98,6 +98,20 @@ menuBtn.addEventListener('click', () => {
 menuPopup.addEventListener('click', () => {
   menuPopup.style.display = 'none';
 });
+
+window.addEventListener('scroll', function(){
+
+const header = document.querySelector('header');
+
+if(window.scrollY > 50){
+header.classList.add('header-small');
+} else {
+header.classList.remove('header-small');
+}
+
+});
+
+  
 </script>
 
 
