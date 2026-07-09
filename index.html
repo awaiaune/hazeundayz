@@ -1,563 +1,464 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>HAZEUNDAYZ | Nicotine-Free Herbal Smoke Ritual</title>
-<meta name="keywords" content="ハーブスモーク, ニコチンフリー, ハーブブレンド, ボタニカルスモーク, hazeundayz">
-  <link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
-  <link rel="apple-touch-icon" href="/favicon.png">
-<meta name="description" content="HazeUndayzは植物だけで作られたニコチンフリーのハーブスモークブランド。タバコを使わないナチュラルなスモーク体験。リラックスやチルタイムのためのボタニカルスモーク。">  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://awaiaune.github.io/hazeundayz/" />
-  <script src="https://cdn.tailwindcss.com"></script>
-   <link rel="stylesheet" href="css.css" />
-<meta property="og:title" content="HAZEUNDAYZ | Nicotine-Free Herbal Smoke Ritual" />
-<meta property="og:description" content="Nicotine-free, plant-based herbal smoke ritual. Designed to slow down, breathe, and return to your own pace." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://awaiaune.github.io/hazeundayz/" />
-  <meta property="og:image" content="https://awaiaune.github.io/hazeundayz/ogp.jpg" />
 
-  <!-- X用（これ入れとくと安定） -->
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="google-site-verification" content="je7iow7oApR94JN4xIhnouxX4QLRRu-R_zfOerHxaq0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HAZEUNDAYZ | Botanical Haze Culture</title>
+
+<meta name="description"
+content="HazeUndayzは植物だけで作られたニコチンフリーのハーブスモークブランド。Plant-based herbal smoke blends that create a new Botanical Haze Culture.">
+
+    <meta name="robots" content="index,follow">
+
+    <link rel="canonical" href="https://hazeundayz.awaiaune.com/">
+
+    <!-- Icons -->
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="HAZEUNDAYZ | Botanical Haze Culture">
+
+    <meta property="og:description"
+        content="Plant-based herbal smoke blends. Discover Botanical Haze Culture.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url"
+        content="https://hazeundayz.awaiaune.com/">
+
+    <meta property="og:image"
+        content="https://hazeundayz.awaiaune.com/ogp.jpg">
+
+    <!-- X -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Search Console -->
+    <meta name="google-site-verification"
+        content="je7iow7oApR94JN4xIhnouxX4QLRRu-R_zfOerHxaq0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Zen+Old+Mincho:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body class="bg-black text-white font-serif m-0 p-0">
 
+<body>
 
-<!-- HAZEUNDAYZ 年齢確認（20歳以上向け） -->
-<div id="age-gate" class="fixed inset-0 bg-black/60 flex justify-center items-center z-[9999]">
-  <div class="bg-black/80 backdrop-blur-md p-10 rounded-3xl text-left max-w-md w-full drop-shadow-xl">
-    
-    <!-- タイトル -->
-    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4 tracking-wide">
-      Welcome to      HazeUndayz
-    </h2>
-    
-    <!-- 説明 -->
-    <p class="text-white text-base md:text-lg leading-relaxed mb-6">
-      このサイトには<br>20歳以上を対象とした商品が含まれています。<br>
-      年齢を確認して、<br>HazeUndayzの世界をお楽しみください。
-    </p>
-    
-    <!-- ボタン -->
-    <div class="flex gap-4">
-      <button id="age-yes" class="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">
-        私は20歳以上です
-      </button>
-      <button id="age-no" class="bg-gray-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-600 transition">
-        私は20歳未満です
-      </button>
+<!-- Age Gate -->
+
+<div id="age-gate">
+
+    <div class="age-box">
+
+        <h2>
+            Welcome to<br>
+            HazeUndayz
+        </h2>
+
+        <p>
+
+            このサイトには<br>
+            20歳以上を対象とした商品が含まれています。<br><br>
+
+            年齢を確認して<br>
+            HazeUndayzの世界をお楽しみください。
+
+        </p>
+
+        <div class="age-buttons">
+
+            <button id="age-yes">
+                私は20歳以上です
+            </button>
+
+            <button id="age-no">
+                私は20歳未満です
+            </button>
+
+        </div>
+
     </div>
-  </div>
+
 </div>
 
-<script>
-  const ageGate = document.getElementById('age-gate');
-  const yesBtn = document.getElementById('age-yes');
-  const noBtn = document.getElementById('age-no');
+<!-- Header -->
 
-  // ページ読み込み時に確認
-  if (localStorage.getItem('ageConfirmed') === 'true') {
-    ageGate.style.display = 'none';
-  }
+<header>
 
-  // 20歳以上ボタン
-  yesBtn.addEventListener('click', () => {
-    localStorage.setItem('ageConfirmed', 'true'); // フラグ保存
-    ageGate.style.display = 'none';
-  });
+    <div class="header-inner">
 
-  // 20歳未満ボタン
-  noBtn.addEventListener('click', () => {
-    window.location.href = 'https://www.google.com'; // 外部サイトへ
-  });
-</script>
+        <a href="index.html" class="logo">
 
+            <img
+                src="images/toppagename1.png"
+                alt="HazeUndayz">
 
+        </a>
 
+        <button id="menu-button" aria-label="menu">
 
-<!-- HEADER -->
-<header class="fixed top-0 left-0 w-full flex justify-center items-center px-4  
-  bg-black/80 backdrop-blur-sm border-b border-white-800 z-50">
+            <span></span>
+            <span></span>
 
-  <!-- ロゴ画像 -->
-  <a href="index.html">
-    <img src="images/toppagename1.png" alt="HazeUndayz" 
-         class="h-16 object-contain block">
-  </a>
+        </button>
 
-  <!-- ハンバーガーメニュー -->
-  <button id="menu-button" class="text-white focus:outline-none absolute right-4">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
+    </div>
+
 </header>
 
-<!-- メニュー（ポップアップ） -->
+<!-- Navigation -->
 
-<div id="menu-popup"
-class="hidden fixed top-[69px] left-0 w-full bg-black/95 text-white flex flex-col items-center space-y-6 py-8 z-40">
-
+<nav id="menu-popup">
 
     <a href="about.html">About</a>
+
     <a href="product.html">Product</a>
-    <a href="news.html">News</a>
+
     <a href="contact.html">Contact</a>
-</div>
 
-<!-- コンテンツがヘッダー下に隠れないように -->
-<div class="pt-[69px]"></div>
+</nav>
 
+<main>
 
 <h1 class="sr-only">
-HAZEUNDAYZ – Botanical Haze Culture
+
+HAZEUNDAYZ
+Botanical Haze Culture
+
 </h1>
 
+<!-- Hero -->
 
+<section class="hero">
 
-<!--　　　Hero (VIDEO)　　　-->
+    <a href="product.html">
 
-<section class="relative w-full max-w-4xl aspect-[3/4] mx-auto overflow-hidden mb-2 mt-4　">
+        <video
+            autoplay
+            muted
+            loop
+            playsinline>
 
-  <a href="product.html"
-     class="relative w-full h-full flex items-center justify-center">
+            <source
+                src="video/2603smokehero1.mp4"
+                type="video/mp4">
 
-    <!-- 動画 -->
-    <video
-      autoplay
-      loop
-      muted
-      playsinline
-      class="absolute inset-0 w-full h-full object-cover"
-    >
-      <source src="video/2603smokehero1.mp4" type="video/mp4">
-    </video>
-
-  </a>
-
-</section>
-
-
-
-<!--　　　text　　　-->
-
-<section class="text-center py-10 px-6 fade">
-
-  <h2 class="text-xl md:text-2xl font-semibold mb-3">
-    空間に、植物の余韻を
-  </h2>
-
-  <p class="text-lg tracking-wide mb-4">
-    Botanical Haze Culture
-  </p>
-
-  <p class="text-sm text-gray-200">
-    自然由来のボタニカルブレンド
-  </p>
-
-  <p class="text-xs text-gray-200">
-    Plant-based botanical blends
-  </p>
-
-</section>
-
-
-
-<section class="py-24 px-6">
-
-<div class="max-w-4xl mx-auto text-center">
-
-<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-2 fade">
-Herbal Blends
-</h2>
-
-  <p class="text-sm text-gray-400 mb-16 fade">
-    自然由来のハーブブレンド
-  </p>
-
-<div class="grid md:grid-cols-2 gap-6 md:gap-12 ">
-
-<div class="fade">
-
-<img src="images/clear.jpg"
-class="rounded-xl mb-5">
-
-<p class="text-xl mb-1">
-CLEAR
-</p>
-
-<p class="text-sm text-gray-400 mb-4">
-Goldenrod / Lemon Balm / Mugwort
-</p>
-
-<a href="product.html#clear"
-class="text-sm underline fade">
-View Blend
-</a>
-
-</div>
-
-<div class="fade">
-
-<img src="images/ember.jpg"
-class="rounded-xl mb-5">
-
-<p class="text-xl mb-1">
-EMBER
-</p>
-
-<p class="text-sm text-gray-400 mb-4">
-Goldenrod / Lemon Balm / Mugwort / Chenpi
-</p>
-
-<a href="product.html#ember"
-class="text-sm underline fade">
-View Blend
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="py-36 px-6">
-
-  <div class="max-w-2xl mx-auto text-center">
-
-    <p class="text-3xl md:text-4xl leading-tight tracking-wider">
-      A quiet ritual<br>
-      with botanicals.
-    </p>
-
-    <p class="text-sm text-gray-300 mt-6">
-      日常に、非日常を。
-    </p>
-
-    <p class="text-xs tracking-widest text-gray-500 mt-8 mb-4">
-      BOTANICAL HAZE CULTURE
-    </p>
-
-  </div>
-
-</section>
-
-
-<!-- THE RITUAL -->
-
-<section class="relative py-24 px-6 overflow-hidden">
-
-  <!-- background video -->
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    class="absolute inset-0 w-full h-full object-cover opacity-20"
-  >
-    <source src="video/smoke.mp4" type="video/mp4">
-  </video>
-
-  <!-- container -->
-  <div class="relative z-10 max-w-4xl mx-auto text-center">
-
-    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-10 fade">
-  The Ritual<br>
-  <span class="text-sm text-gray-400 tracking-widest">
-    OF BOTANICAL HAZE
-  </span>
-</h2>
-
-    <p class="max-w-2xl mx-auto  text-base leading-relaxed fade">
-      植物の気配が漂う。<br>
-      その瞬間にふれる。<br>
-      <br>
-      <p class="fade mb-16">日常に非日常を。<br>
-      </p>
-    </p>
-
-<div class="grid md:grid-cols-3 gap-12 text-center">
-
-  <!-- 01 -->
-  <div>
-    <p class="text-xl mb-4 fade">Observe</p>
-
-    <img
-      src="images/a.jpg"
-      class="w-full aspect-[4/1] object-cover rounded-lg mb-4 fade"
-    >
-
-    <p class="text-sm text-gray-400 fade">
-      See
-    </p>
-  </div>
-
-  <!-- 02 -->
-  <div>
-    <p class="text-xl mb-4 fade">Feel</p>
-
-    <img
-      src="images/b.jpg"
-      class="w-full aspect-[4/1] object-cover rounded-lg mb-4 fade"
-    >
-
-    <p class="text-sm text-gray-400 fade">
-      Touch
-    </p>
-  </div>
-
-  <!-- 03 -->
-  <div>
-    <p class="text-xl mb-4 fade">Haze</p>
-
-      <video autoplay loop muted playsinline class="w-full aspect-[4/1] object-cover rounded-lg mb-4 fade">
-          <source src="video/c.mp4" type="video/mp4">
         </video>
-    <p class="text-sm text-gray-400 fade">
-      Float
-    </p>
-  </div>
-
-</div>
-</div>
-</section>
-
-
-
-<!--　　　About導線　　　-->
-
-<section class="text-center py-16 px-6 mt-16 max-w-2xl mx-auto fade">
-
-  <h2 class="text-xl md:text-2xl font-semibold mb-6">
-    Botanical Hazeとは
-  </h2>
-
-  <p class="text-sm leading-relaxed mb-6">
-    植物をブレンドし、<br>
-    香りや質感を楽しむ<br>
-    新しいカルチャー。
-  </p>
-
-  <p class="text-sm text-gray-300 leading-relaxed mb-8">
-    自然由来のハーブだけで作られています。
-  </p>
-
-  <a href="about.html"
-     class="fade inline-block px-8 py-3 border border-white rounded-full
-            text-sm tracking-wide hover:bg-white hover:text-black
-            transition duration-300">
-    もっと知る<br>
-    <span class="text-xs opacity-70">
-      About Botanical Haze
-    </span>
-  </a>
-
-</section>
-
-
-
-<section class="mt-40 bg-black text-white font-sans px-6 py-16 tracking-tight fade">
-  <div class="max-w-4xl mx-auto">
-
-    <h2 class="text-4xl md:text-5xl text-center font-bold opacity-90 mb-16">
-      FAQ
-    </h2>
-
-    <div class="space-y-8 text-sm md:text-base leading-relaxed ">
-
-      <div class="fade">
-        <h3 class="font-bold">ニコチンは含まれていますか？</h3>
-        <p class="text-gray-400">
-          含まれていません。HazeUndayzの製品は完全にニコチンフリーです。
-        </p>
-        <p class="text-gray-500 text-sm">
-          Does it contain nicotine? No. All products are nicotine-free.
-        </p>
-      </div>
-
-      <div class="fade">
-        <h3 class="font-bold">違法成分は含まれていますか？</h3>
-        <p class="text-gray-400">
-          含まれていません。すべて合法な植物のみを使用しています。
-        </p>
-        <p class="text-gray-500 text-sm">
-          Does it contain illegal substances? No. Only legal herbs are used.
-        </p>
-      </div>
-
-      <div class="fade">
-        <h3 class="font-bold">どのように楽しめますか？</h3>
-        <p class="text-gray-400">
-          ジョイントに巻いたり、パイプで楽しむことができます。
-        </p>
-        <p class="text-gray-500 text-sm">
-          How do I use it? Roll it into a joint or use it with a pipe.
-        </p>
-      </div>
-
-      <div class="fade">
-        <h3 class="font-bold">これはタバコですか？</h3>
-        <p class="text-gray-400">
-          いいえ。タバコ葉は使用していません。
-        </p>
-        <p class="text-gray-500 text-sm">
-          Is this tobacco? No tobacco leaves are used.
-        </p>
-      </div>
-
-<div class="fade">
-<h3 class="font-bold">これは大麻ですか？</h3>
-<p class="text-gray-400">
-いいえ。HazeUndayzは大麻やCBDを含みません。
-植物のみで作られたハーブブレンドです。
-</p>
-<p class="text-gray-500 text-sm">
-Is this cannabis? No. It contains no cannabis or CBD.
-</p>
-</div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="py-24 px-6 text-center fade">
-
-  <div class="max-w-3xl mx-auto">
-
-    <h2 class="text-3xl md:text-4xl font-bold mb-8">
-      How to Roll
-    </h2>
-
-    <p class="text-base text-gray-300 mb-12 leading-relaxed">
-      ハーブを巻き、火を灯し、煙を楽しむ。<br>
-      HazeUndayzのボタニカルスモークの楽しみ方。
-    </p>
-
-    <a href="howtoroll.html"
-      class="inline-block border border-white px-8 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition fade">
-
-      HOW TO ROLL
 
     </a>
 
-  </div>
+
 
 </section>
 
+<!-- ==========================================
+TEXT
+========================================== -->
 
+<section class="intro fade">
 
-<section class="mt-20 bg-black text-white font-sans py-16 tracking-tight fade">
-  <div class="mx-auto text-center">
-    <h2 class="text-base font-serif,thin tracking-wide opacity-90 text-xs ">
-Notice</br></br>
+    <div class="container-small">
 
-本製品はニコチンやタバコを含みません。<br>
-違法成分は含まれていません。<br>
-植物のみで作られたハーブスモークです。<br><br>
-      20歳以上の方を対象とした嗜好品です。<br>
-</h2>
-  </div>
-</section>
+        <h2>
+            空間に、植物の余韻を
+        </h2>
 
+        <p class="subtitle">
+            Botanical Haze Culture
+        </p>
 
+        <p class="jp">
+            自然由来のボタニカルブレンド
+        </p>
 
+        <p class="en">
+            Plant-based botanical blends
+        </p>
 
-<!-- FOOTER -->
-<footer class="bg-black text-gray-300 py-10 px-6 text-center">
-  <div class="max-w-5xl mx-auto flex flex-col justify-center items-center gap-8 border-t border-gray-700 pt-8">
-
-    <!-- ロゴ -->
-    <a href="index.html" class="flex flex-col items-center fade">
-      <img src="images/logowhite.png" alt="HazeUndayzlogo" class="h-20 mb-4">
-      <p class="text-xs tracking-widest uppercase"></p>
-    </a>
-
-    <!-- ナビゲーション -->
-    <nav class="flex flex-wrap justify-center gap-6 text-sm fade">
-      <a href="about.html" class="hover:text-white transition-colors">About</a>
-      <a href="product.html" class="hover:text-white transition-colors">Products</a>
-      <a href="news.html" class="hover:text-white transition-colors">news</a>
-      <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
-    </nav>
-
-    <!-- SNS -->
-    <div class="flex justify-center gap-6 fade">
-      <a href="https://www.instagram.com/hazeundayz" target="_blank" class="hover:text-white transition-colors">Instagram</a>
-      <a href="https://x.com/HazeUndayz" target="_blank" class="hover:text-white transition-colors">X</a>
-      <!--a href="https://www.tiktok.com/@hazeundayz" target="_blank" class="hover:text-white transition-colors">tiktok</a-->
     </div>
 
-    <!-- コピーライト -->
-    <p class="text-xs text-gray-500 mt-8">&copy; 2025 HazeUndayz. All rights reserved.</p>
+</section>
 
-  </div>
+
+<!-- ==========================================
+HERBAL BLENDS
+========================================== -->
+
+<section class="blends">
+
+    <div class="container">
+
+        <div class="section-title fade">
+
+            <h2>
+                Herbal Blends
+            </h2>
+
+            <p>
+                自然由来のハーブブレンド
+            </p>
+
+        </div>
+
+
+        <div class="blend-grid">
+
+
+            <!-- CLEAR -->
+
+            <article class="blend-card fade">
+
+                <img
+                    src="images/clear.jpg"
+                    alt="CLEAR">
+
+                <h3>
+                    CLEAR
+                </h3>
+
+                <p class="blend-herbs">
+                    Goldenrod /
+                    Lemon Balm /
+                    Mugwort
+                </p>
+
+                <a
+                    href="product.html#clear"
+                    class="button-link">
+
+                    View Blend
+
+                </a>
+
+            </article>
+
+
+
+            <!-- EMBER -->
+
+            <article class="blend-card fade">
+
+                <img
+                    src="images/ember.jpg"
+                    alt="EMBER">
+
+                <h3>
+                    EMBER
+                </h3>
+
+                <p class="blend-herbs">
+
+                    Goldenrod /
+                    Lemon Balm /
+                    Mugwort /
+                    Chenpi
+
+                </p>
+
+                <a
+                    href="product.html#ember"
+                    class="button-link">
+
+                    View Blend
+
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+QUIET RITUAL
+========================================== -->
+
+<section class="quote">
+
+    <div class="container-small fade">
+
+        <h2>
+
+            A quiet ritual<br>
+            with botanicals.
+
+        </h2>
+
+        <p class="jp">
+
+            日常に、非日常を。
+
+        </p>
+
+        <p class="caption">
+
+            BOTANICAL HAZE CULTURE
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+ABOUT BOTANICAL HAZE
+========================================== -->
+
+<section class="about-haze fade">
+
+    <div class="container-small">
+
+        <h2>
+
+            Botanical Hazeとは
+
+        </h2>
+
+        <p class="lead">
+
+            植物をブレンドし、
+            香りや質感を楽しむ<br>
+            新しいカルチャー
+
+        </p>
+
+        <p class="description">
+
+            自然由来のハーブだけで作られています。
+
+        </p>
+
+        <a
+            href="about.html"
+            class="outline-button">
+
+            <span>
+
+                もっと知る
+
+            </span>
+
+            <small>
+
+                About Botanical Haze
+            </small>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+NOTICE
+========================================== -->
+
+<section class="notice">
+
+    <div class="container-small">
+
+        <h2>Notice</h2>
+
+        <p>
+
+            本製品はニコチンやタバコを含みません。<br>
+            違法成分は含まれていません。<br>
+            植物のみで作られたハーブスモークです。
+
+        </p>
+
+        <p>
+
+            20歳以上の方を対象とした嗜好品です。
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+FOOTER
+========================================== -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <a href="index.html" class="footer-logo">
+
+            <img
+                src="images/logowhite.png"
+                alt="HazeUndayz">
+
+        </a>
+
+
+        <nav class="footer-nav">
+
+   <a href="about.html">About</a>
+   <a href="product.html">Products</a>
+   <a href="contact.html">Contact</a>
+
+        </nav>
+
+
+        <div class="footer-social">
+
+            <a
+                href="https://www.instagram.com/hazeundayz"
+                target="_blank">
+
+                Instagram
+
+            </a>
+
+            <a
+                href="https://x.com/HazeUndayz"
+                target="_blank">
+
+                X
+
+            </a>
+
+        </div>
+
+
+        <p class="copyright">
+
+            © 2026 HazeUndayz.
+            All rights reserved.
+
+        </p>
+
+    </div>
+
 </footer>
 
 
 
-
-
-  
-<script>
-/* メニュー */
-const menuBtn = document.getElementById('menu-button');
-const menuPopup = document.getElementById('menu-popup');
-menuBtn.addEventListener('click', () => {
-  menuPopup.style.display = menuPopup.style.display === 'flex' ? 'none' : 'flex';
-});
-menuPopup.addEventListener('click', () => {
-  menuPopup.style.display = 'none';
-});
-
-menuPopup.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => menuPopup.style.display = 'none');
-});
-
-const fades = document.querySelectorAll(".fade");
-
-const observer = new IntersectionObserver(entries => {
-
-entries.forEach(entry => {
-
-if(entry.isIntersecting){
-entry.target.classList.add("show")
-}
-
-})
-
-})
-
-fades.forEach(el => observer.observe(el))
-
-window.addEventListener('scroll', function(){
-
-const header = document.querySelector('header');
-
-if(window.scrollY > 50){
-header.classList.add('header-small');
-} else {
-header.classList.remove('header-small');
-}
-
-});
-
-  
-</script>
-
-
-
-
-
-
-
-
+<script src="script.js"></script>
 
 </body>
 </html>
