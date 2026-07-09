@@ -1,7 +1,7 @@
 /* ==========================================
    AGE GATE
 ========================================== */
-localStorage.removeItem("ageConfirmed");
+
 
 const ageGate = document.getElementById("age-gate");
 const ageYes = document.getElementById("age-yes");
