@@ -1,0 +1,640 @@
+/*==================================================
+ABOUT PAGE
+==================================================*/
+
+/* HERO */
+
+.about-hero{
+
+    padding:140px 20px 110px;
+    text-align:center;
+
+}
+
+.about-hero .container-small{
+
+    max-width:720px;
+
+}
+
+.hero-subtitle{
+
+    display:inline-block;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:.75rem;
+
+    letter-spacing:.45em;
+
+    color:#777;
+
+    margin-bottom:28px;
+
+}
+
+.about-hero h2{
+
+    font-size:2.8rem;
+
+    font-weight:400;
+
+    line-height:1.25;
+
+    letter-spacing:.05em;
+
+    margin-bottom:34px;
+
+}
+
+.hero-text{
+
+    font-size:.95rem;
+
+    color:#bdbdbd;
+
+    line-height:2.2;
+
+}
+
+
+
+/*==================================================
+COMMON SECTION
+==================================================*/
+
+.about-section{
+
+    padding:140px 20px;
+
+}
+
+.about-section .container{
+
+    width:min(1100px,92%);
+
+    margin:auto;
+
+}
+
+.about-section .container-small{
+
+    width:min(700px,92%);
+
+    margin:auto;
+
+}
+
+.about-section h2{
+
+    font-size:2rem;
+
+    font-weight:400;
+
+    line-height:1.4;
+
+    margin-bottom:32px;
+
+    text-align:center;
+
+}
+
+.about-section p{
+
+    font-size:.9rem;
+
+    color:#b8b8b8;
+
+    line-height:2.2;
+
+}
+
+
+
+/*==================================================
+IMAGE
+==================================================*/
+
+.about-image{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:0 auto 70px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:1s ease;
+
+}
+
+.about-image:hover img{
+
+    transform:scale(1.03);
+
+}
+
+
+
+/*==================================================
+TEXT BLOCK
+==================================================*/
+
+.about-copy{
+
+    max-width:640px;
+
+    margin:auto;
+
+    text-align:left;
+
+}
+
+.about-copy p{
+
+    margin-bottom:22px;
+
+}
+
+.about-copy strong{
+
+    color:#fff;
+
+    font-weight:500;
+
+}
+
+
+
+/*==================================================
+DIVIDER
+==================================================*/
+
+.about-divider{
+
+    width:80px;
+
+    height:1px;
+
+    background:rgba(255,255,255,.15);
+
+    margin:70px auto;
+
+}
+
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.about-hero{
+
+    padding:110px 24px 80px;
+
+}
+
+.about-hero h2{
+
+    font-size:2rem;
+
+}
+
+.hero-text{
+
+    font-size:.82rem;
+
+}
+
+.about-section{
+
+    padding:90px 24px;
+
+}
+
+.about-section h2{
+
+    font-size:1.55rem;
+
+}
+
+.about-image{
+
+    margin-bottom:50px;
+
+    border-radius:12px;
+
+}
+
+.about-copy p{
+
+    font-size:.82rem;
+
+}
+
+}
+
+/*==================================================
+FEATURES
+==================================================*/
+
+.features{
+
+    width:min(1000px,92%);
+    margin:80px auto 0;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+
+}
+
+.feature{
+
+    padding:36px 24px;
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+
+    background:rgba(255,255,255,.02);
+
+    text-align:center;
+
+    transition:.35s ease;
+
+}
+
+.feature:hover{
+
+    transform:translateY(-6px);
+
+    background:rgba(255,255,255,.04);
+
+    border-color:rgba(255,255,255,.18);
+
+}
+
+.feature h3{
+
+    font-size:1rem;
+    font-weight:500;
+    letter-spacing:.08em;
+
+    margin-bottom:14px;
+
+}
+
+.feature p{
+
+    font-size:.75rem;
+
+    color:#8c8c8c;
+
+    line-height:1.8;
+
+}
+
+
+
+/*==================================================
+PHILOSOPHY
+==================================================*/
+
+.philosophy{
+
+    text-align:center;
+
+}
+
+.philosophy .container-small{
+
+    max-width:760px;
+
+}
+
+.philosophy h2{
+
+    font-size:2.4rem;
+
+    line-height:1.6;
+
+    font-weight:300;
+
+    margin-bottom:46px;
+
+}
+
+.philosophy p{
+
+    max-width:620px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:#b6b6b6;
+
+}
+
+.philosophy .hero-subtitle{
+
+    margin-bottom:22px;
+
+}
+
+
+
+/*==================================================
+FROM JAPAN
+==================================================*/
+
+.from-japan .about-image{
+
+    margin-bottom:60px;
+
+}
+
+.from-japan .about-copy{
+
+    max-width:620px;
+
+}
+
+
+
+/*==================================================
+QUOTE
+==================================================*/
+
+.about-quote{
+
+    padding:170px 20px;
+
+    text-align:center;
+
+}
+
+.about-quote h2{
+
+    font-size:2.3rem;
+
+    font-weight:300;
+
+    line-height:1.7;
+
+    margin-bottom:34px;
+
+}
+
+.about-quote p{
+
+    font-size:.82rem;
+
+    letter-spacing:.22em;
+
+    color:#777;
+
+}
+
+
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+.features{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:16px;
+
+    margin-top:50px;
+
+}
+
+.feature{
+
+    padding:24px 16px;
+
+}
+
+.feature h3{
+
+    font-size:.85rem;
+
+}
+
+.feature p{
+
+    font-size:.68rem;
+
+}
+
+.philosophy h2{
+
+    font-size:1.7rem;
+
+}
+
+.about-quote{
+
+    padding:110px 24px;
+
+}
+
+.about-quote h2{
+
+    font-size:1.7rem;
+
+}
+
+}
+
+
+/*==================================================
+CTA
+==================================================*/
+
+.about-cta{
+    text-align:center;
+}
+
+.about-cta .container-small{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.about-cta h2{
+    text-align:center;
+}
+
+.about-cta p{
+    text-align:center;
+}
+
+.about-cta .outline-button{
+    margin-top:40px;
+}
+
+.about-cta .outline-button span{
+
+    font-size:.95rem;
+
+}
+
+.about-cta .outline-button small{
+
+    display:block;
+
+    margin-top:6px;
+
+}
+
+
+
+/*==================================================
+SECTION SPACING
+==================================================*/
+
+.about-section + .about-section{
+
+    border-top:1px solid rgba(255,255,255,.04);
+
+}
+
+.about-section:nth-child(even){
+
+    background:rgba(255,255,255,.01);
+
+}
+
+
+
+/*==================================================
+IMAGE EFFECT
+==================================================*/
+
+.about-image{
+
+    position:relative;
+
+}
+
+.about-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.28),
+        rgba(0,0,0,0)
+    );
+
+    pointer-events:none;
+
+}
+
+
+
+/*==================================================
+TEXT ANIMATION
+==================================================*/
+
+.about-copy p{
+
+    transition:.35s ease;
+
+}
+
+.about-copy:hover p{
+
+    color:#d5d5d5;
+
+}
+
+
+
+/*==================================================
+BUTTON
+==================================================*/
+
+.outline-button{
+
+    transition:
+        background .35s ease,
+        color .35s ease,
+        transform .35s ease;
+
+}
+
+.outline-button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+
+/*==================================================
+FOOTER
+==================================================*/
+
+footer{
+
+    margin-top:80px;
+
+}
+
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.about-cta{
+
+    padding:110px 24px;
+
+}
+
+.about-cta h2{
+
+    font-size:1.6rem;
+
+}
+
+.about-cta p{
+
+    font-size:.82rem;
+
+}
+
+.about-section + .about-section{
+
+    border-top:none;
+
+}
+
+}
